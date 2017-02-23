@@ -79,7 +79,7 @@ namespace dragon{
     }
 
     void once_init_key(){
-        std::cout << "g_log_key only init once" << std::endl;
+        //std::cout << "g_log_key only init once" << std::endl;
         pthread_key_create(&g_log_key, thread_close);
     } 
 
