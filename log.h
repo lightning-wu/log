@@ -21,13 +21,13 @@
 
 namespace dragon{
     
-    typedef struct file_t{
+    struct file_t{
         std::ostream *fd;
         pthread_mutex_t mutex;
         int ref;
     };
     
-    typedef struct thread_log_t{
+    struct thread_log_t{
         std::string thread_name;
         file_t *pfile;
         file_t *pwfile;
